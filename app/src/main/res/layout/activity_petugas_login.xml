@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.login.PetugasLoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bgloginpetugas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/blue_primary"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sourcesansprosemibold"
+                android:text="@string/masuk"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="31dp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textAlignment="center"
+            android:textColor="@color/red_error"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/cvMasuk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/hintphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:text="@string/hintphone"
+            android:textColor="@color/blue_hint"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/tilPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="5dp"
+            app:boxBackgroundMode="none"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toTopOf="@+id/tvError">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitecardgraycorner"
+                android:drawableStart="@drawable/ic_iconpwnew"
+                android:inputType="textPassword"
+                android:paddingVertical="3dp"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="5dp"
+            app:boxBackgroundMode="none"
+
+            app:layout_constraintBottom_toTopOf="@+id/hintphone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitecardgraycorner"
+                android:drawableStart="@drawable/ic_iconindonew"
+                android:inputType="phone"
+                android:paddingVertical="3dp"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:text="@string/intrologin"
+            android:id="@+id/intrologin"
+            android:textSize="14sp"
+            android:textColor="@color/grey1"
+            app:layout_constraintBottom_toTopOf="@id/tilPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sourcesansprosemibold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/selamat_datang"
+            app:layout_constraintBottom_toTopOf="@id/intrologin"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="45dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

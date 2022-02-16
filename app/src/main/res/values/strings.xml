@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">daylima</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="logout">Apakah Anda Yakin Ingin Keluar?</string>
+    <string name="alamatProperti">Alamat Properti</string>
+    <string name="tanggaldanjam"><![CDATA[Tanggal & Jam Masuk]]></string>
+    <string name="noLogout">Kembali</string>
+    <string name="yesLogout">Ya, Keluar Dari Layanan</string>
+    <string name="logout2">Jika Yakin, Anda Harus Login Kembali Untuk Menggunakan Layanan Secara Lengkap.</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="masuk">Masuk</string>
+    <string name="hintphone">*masukkan nomor handphone yang terdaftar sebagai petugas</string>
+    <string name="intrologin">Kini mengatur dan menyelesaikan tugas semakin mudah melalui aplikasi.</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="daftar_tugas_saya">Daftar Tugas Saya</string>
+    <string name="tugas_masuk">Tugas Masuk</string>
+    <string name="sedang_diproses">Sedang Diproses</string>
+    <string name="tidak_ada_tugas_masuk_hari_ini_silakan_cek_kembali_halaman_ini_secara_berkala">Tidak ada tugas masuk hari ini. \nSilakan cek kembali halaman ini secara berkala.</string>
+    <string name="google_maps_key">AIzaSyA1_dPqtYpOj8lCCGZb2lJlkFGEo3wFX0s</string>
+</resources>
